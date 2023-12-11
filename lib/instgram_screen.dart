@@ -71,27 +71,28 @@ class _InstgramState extends State<Instgram> {
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.red,
-        unselectedItemColor: Colors.white,
+        showSelectedLabels: false,
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.grey,
         backgroundColor: Colors.black,
         elevation: 0,
-        showUnselectedLabels: true,
+        showUnselectedLabels: false,
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home_filled),
-            label: '',
+            label: 'home',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
-            label: '',
+            label: 'search',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_bag_outlined),
-            label: '',
+            label: 'shopping',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            label: '',
+            label: 'profile',
           )
         ],
       ),
